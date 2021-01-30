@@ -2,6 +2,8 @@ package backend;
 
 import java.util.ArrayList;
 
+import enums.ClassType;
+
 public class Hour {
 	ArrayList<Minute> minutes;
 
@@ -19,6 +21,17 @@ public class Hour {
 	public void setMinutes(ArrayList<Minute> minutes) {
 		this.minutes = minutes;
 	}
+	
+	public void setMinute(int minute, ClassType type) {
+		minutes.get(minute-1).setClassType(type);
+	}
+	
+	
+	public Minute getMinute(int minute) {
+
+		return minutes.get(minute-1);
+	}
+	
 	
 	
 
