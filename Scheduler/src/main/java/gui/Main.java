@@ -1,11 +1,17 @@
 package gui;
-//Usually you will require both swing and awt packages
-//even if you are working with just swings.
 
+import backend.WeekCalendar;
 
-		class Main {
-		 public static void main(String args[]) {
-			EventHandler question = new EventHandler();
-			question.createQuestion();
-		 }
+public class Main {
+	
+
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		 WeekCalendar calendar = new WeekCalendar();
+		 calendar.initiateListOfDays();
 	}
+	
+
+
+}
+

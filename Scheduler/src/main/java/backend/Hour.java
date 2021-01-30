@@ -3,19 +3,23 @@ package backend;
 import java.util.ArrayList;
 
 public class Hour {
-	ArrayList<Integer> Minutes;
+	ArrayList<Minute> minutes;
 
-	public Hour(ArrayList<Integer> minutes) {
-		super();
-		Minutes = minutes;
+	public Hour() {
+		minutes = new ArrayList<Minute>();
+		for (int i = 0; i < 60 ; i++) {
+			Minute minute = new Minute();
+			minutes.add(minute);
+		}
+	}
+	public ArrayList<Minute> getMinutes() {
+		return minutes;
 	}
 
-	public ArrayList<Integer> getMinutes() {
-		return Minutes;
+	public void setMinutes(ArrayList<Minute> minutes) {
+		this.minutes = minutes;
 	}
-
-	public void setMinutes(ArrayList<Integer> minutes) {
-		Minutes = minutes;
-	}
+	
+	
 
 }
