@@ -34,7 +34,7 @@ public class EventHandler implements ActionListener {
      //Creating the panel at bottom and adding components
      JPanel panel = new JPanel(); // the panel is not visible in output
      JLabel label = new JLabel("What does your class start?");
-     JTextField tf = new JTextField(10); // accepts up to 10 characters
+     tf = new JTextField(10); // accepts up to 10 characters
      JButton enter = new JButton("Enter");
      JButton reset = new JButton("Clear");
      panel.add(label); // Components Added using Flow Layout
@@ -59,6 +59,6 @@ public class EventHandler implements ActionListener {
 	}
 	public void actionPerformed(ActionEvent e) {
 		String text = tf.getText();
-		System.out.print(text);
+		System.out.println(text);
 	}
 }
