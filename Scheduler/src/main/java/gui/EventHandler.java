@@ -10,8 +10,19 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import backend.WeekCalendar;
+
 public class EventHandler implements ActionListener {
+	
+	
 	JTextField tf;
+	WeekCalendar calendar;
+	
+	public EventHandler(WeekCalendar calendar) {
+		this.calendar = calendar;
+	}
+	
+	
 	public void createQuestion() {
     	//Option for inputting schedule times
 		/*
