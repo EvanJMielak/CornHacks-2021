@@ -5,21 +5,24 @@ import java.util.ArrayList;
 import enums.DayOfWeek;
 
 public class Day {
-	ArrayList<Integer> Hours;
+	ArrayList<Hour> hours;
 	DayOfWeek dayOfWeek;
 
-	public Day(ArrayList<Integer> hours, DayOfWeek dayOfWeek) {
-		super();
-		Hours = hours;
-		this.dayOfWeek = dayOfWeek;
+	public Day() {
+		hours = new ArrayList<Hour>();
+		for (int i = 0; i < 24 ; i++) {
+			Hour hour = new Hour();
+			hours.add(hour);
+		}
+	}
+	
+	
+	public ArrayList<Hour> getHours() {
+		return hours;
 	}
 
-	public ArrayList<Integer> getHours() {
-		return Hours;
-	}
-
-	public void setHours(ArrayList<Integer> hours) {
-		Hours = hours;
+	public void setHours(ArrayList<Hour> hours) {
+		this.hours = hours;
 	}
 
 	public DayOfWeek getDayOfWeek() {

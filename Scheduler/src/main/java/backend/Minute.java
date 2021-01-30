@@ -5,9 +5,8 @@ import enums.ClassType;
 public class Minute {
 	ClassType classType;
 
-	public Minute(ClassType classType) {
-		super();
-		this.classType = classType;
+	public Minute() {
+		this.classType = ClassType.AVAILABLETIME;
 	}
 
 	public ClassType getClassType() {
