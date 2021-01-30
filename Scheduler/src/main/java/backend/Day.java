@@ -32,5 +32,9 @@ public class Day {
 	public void setDayOfWeek(DayOfWeek dayOfWeek) {
 		this.dayOfWeek = dayOfWeek;
 	}
+	
+	public Hour getHour(int hour) {
+		return hours.get(hour-1);
+	}
 
 }

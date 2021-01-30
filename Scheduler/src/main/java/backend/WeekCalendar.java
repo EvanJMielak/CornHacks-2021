@@ -17,5 +17,9 @@ public class WeekCalendar {
 			calendar.add(day);
 		}
 	}
+	
+	public Day getDay(int day) {
+		return calendar.get(day-1);
+	}
 
 }
