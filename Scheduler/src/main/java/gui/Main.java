@@ -1,8 +1,8 @@
 package gui;
 
 
-public class Main{
+public class Main {
 	
-
+	
 
 }
