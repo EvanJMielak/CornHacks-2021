@@ -9,6 +9,3 @@ package gui;
 			question.createQuestion();
 		 }
 	}
-
-
-}
