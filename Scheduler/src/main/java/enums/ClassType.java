@@ -1,0 +1,7 @@
+package enums;
+
+public enum ClassType {
+	
+	AVAILABLETIME, SLEEPINGTIME, CLASSTIME, UNAVAILABLETIME, STUDYTIME, BUFFERTIME
+	
+}
